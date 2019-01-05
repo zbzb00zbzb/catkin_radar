@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="radar_visualizer" name="radar_visualizer" type="radar_visualizer_node">
+    </node>
+</launch>
