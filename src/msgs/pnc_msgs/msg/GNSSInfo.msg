@@ -1,0 +1,64 @@
+int32 SOLUTION_STATUS_SOL_COMPUTED = 0
+int32 SOLUTION_STATUS_INSUFFICIENT_OBS = 1
+int32 SOLUTION_STATUS_NO_CONVERGENCE = 2
+int32 SOLUTION_STATUS_SINGULARITY = 3
+int32 SOLUTION_STATUS_COV_TRACE = 4
+int32 SOLUTION_STATUS_COLD_START = 5
+int32 SOLUTION_STATUS_V_H_LIMIT = 6
+int32 SOLUTION_STATUS_VARIANCE = 7
+int32 SOLUTION_STATUS_INTEGRITY_WARNING = 8
+int32 SOLUTION_STATUS_PENDING = 9
+int32 SOLUTION_STATUS_INVALID_FIX = 10
+int32 SOLUTION_STATUS_UNAUTHORIZED = 11
+
+int32 POSITION_TYPE_NONE = 0
+int32 POSITION_TYPE_FIXEDPOS = 1
+int32 POSITION_TYPE_FIXEDHEIGHT = 2
+int32 POSITION_TYPE_DOPPLER_VELOCITY = 8
+int32 POSITION_TYPE_SINGLE = 16
+int32 POSITION_TYPE_PSRDIFF = 17
+int32 POSITION_TYPE_WAAS = 18
+int32 POSITION_TYPE_PROPAGATED = 19
+int32 POSITION_TYPE_OMNISTAR = 20
+int32 POSITION_TYPE_L1_FLOAT = 32
+int32 POSITION_TYPE_IONOFREE_FLOAT = 33
+int32 POSITION_TYPE_NARROW_FLOAT = 34
+int32 POSITION_TYPE_L1_INT = 48
+int32 POSITION_TYPE_NARROW_INT = 50
+int32 POSITION_TYPE_OMNISTAR_HP = 64
+int32 POSITION_TYPE_OMNISTAR_XP = 65
+int32 POSITION_TYPE_PPP_CONVERGING = 68
+int32 POSITION_TYPE_PPP = 69
+int32 POSITION_TYPE_OPERATIONAL = 70
+int32 POSITION_TYPE_WARNING = 71
+int32 POSITION_TYPE_OUT_OF_BOUNDS = 72
+
+#position and velocity
+Header header
+int32 sendtime
+float64 longitude
+float64 latitude
+geometry_msgs/Vector3 position
+int32 UTMZoneNum
+uint8 UTMZoneChar
+geometry_msgs/Vector3 attitude
+geometry_msgs/Vector3 velocity
+geometry_msgs/Vector3 SD
+float64 second
+int32 SatUseNum
+int32 SatInViewNum
+float64 vel_latency
+int32 solution_status
+int32 position_type
+string status
+
+#dual antena angle
+geometry_msgs/Vector3 attitude_dual
+geometry_msgs/Vector3 SD_angle_dual
+float64 base_line_length_dual
+int32 solution_status_dual
+int32 type_dual
+int32 solution_source_dual
+
+
+

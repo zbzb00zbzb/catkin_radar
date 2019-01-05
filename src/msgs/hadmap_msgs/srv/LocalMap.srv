@@ -1,0 +1,13 @@
+# current localization
+geometry_msgs/Transform transform
+# query length before us
+float32 query_len_ahead
+# query length after us
+float32 query_len_behind
+
+---
+
+# timestamp
+Header header
+# all lanes
+LocalMapLane[] lanes

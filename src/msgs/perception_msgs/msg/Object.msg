@@ -1,0 +1,29 @@
+int32 id
+int32 age
+int32 prediction_age
+
+geometry_msgs/Point reference_point
+geometry_msgs/Point bounding_box_center
+geometry_msgs/Point bounding_box_size
+geometry_msgs/Point object_box_center
+geometry_msgs/Point object_box_size
+
+float64 object_box_orientation
+float64 object_box_orientation_absolute
+
+geometry_msgs/Point absolute_velocity
+geometry_msgs/Point absolute_velocity_sigma
+geometry_msgs/Point relative_velocity
+
+geometry_msgs/Point absolute_acceleration
+geometry_msgs/Point relative_acceleration
+
+geometry_msgs/Point absolute_yaw_rate
+geometry_msgs/Point relative_yaw_rate
+
+int32 classification
+int32 classification_age
+int32 classification_certainty
+
+geometry_msgs/Point[] contour_points
+geometry_msgs/Point[] contour_points_absolute
