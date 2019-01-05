@@ -1,0 +1,14 @@
+# 0 for left, 1 for middle, 2 for right
+
+#freqency to read from can card
+recv_info_freq: 100
+
+#not use yet
+max_missing_times: 100
+
+#freqency to check if we have received vehicle_msgs/radar_msgs/gnss_msgs...
+#actual timeout time: 1 / $(arg check_msg_freg) * 10 = 1s
+check_msg_freq: 10
+
+#//freqency to send vehicle_msgs: speed, yaw_rate
+send_req_vehicle_msg_freq: 50

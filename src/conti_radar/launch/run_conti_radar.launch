@@ -1,0 +1,44 @@
+<!--<launch>-->
+	<!--<arg name="recvInfoFreq" default="100"/>-->
+	<!--<arg name="maxMissingTimes"  default="100"/>-->
+	<!--<arg name="longOffsetMid" default="6.0"/> #measured-->
+	<!--<arg name="latOffsetMid" default="0.0"/>-->
+	<!--<arg name="angularDeviationMid" default="90.0"/>-->
+	<!--<arg name="longOffsetLeft" default="6.0"/>-->
+	<!--<arg name="latOffsetLeft" default="-1.12"/>-->
+	<!--<arg name="angularDeviationLeft" default="165.0"/>-->
+	<!--<arg name="longOffsetRight" default="6.0"/>-->
+	<!--<arg name="latOffsetRight" default="1.12"/>-->
+	<!--<arg name="angularDeviationRight" default="15.0"/>-->
+	<!--<arg name="checkMsgFreq" default="10"/>-->
+	<!--<arg name="sendReqVehicleMsgFreq" default="50"/>-->
+
+
+	<!--<node pkg="conti_radar" name="conti_radar" type="conti_radar_node">-->
+		<!--<param name="recvInfoFreq" type="int" value="$(arg recvInfoFreq)"/>-->
+		<!--<param name="longOffsetMid" type="double" value="$(arg longOffsetMid)"/>-->
+		<!--<param name="latOffsetMid" type="double" value="$(arg latOffsetMid)"/>-->
+		<!--<param name="angularDeviationMid" type="double" value="$(arg angularDeviationMid)"/>-->
+		<!--<param name="longOffsetLeft" type="double" value="$(arg longOffsetLeft)"/>-->
+		<!--<param name="latOffsetLeft" type="double" value="$(arg latOffsetLeft)"/>-->
+		<!--<param name="angularDeviationLeft" type="double" value="$(arg angularDeviationLeft)"/>-->
+		<!--<param name="longOffsetRight" type="double" value="$(arg longOffsetRight)"/>-->
+		<!--<param name="latOffsetRight" type="double" value="$(arg latOffsetRight)"/>-->
+		<!--<param name="angularDeviationRight" type="double" value="$(arg angularDeviationRight)"/>-->
+		<!--<param name="checkMsgFreq" type="double" value="$(arg checkMsgFreq)"/>-->
+		<!--<param name="sendReqVehicleMsgFreq" type="double" value="$(arg sendReqVehicleMsgFreq)"/>-->
+	<!--</node>-->
+<!--</launch>-->
+
+
+
+<launch>
+	<arg name="node_name" default="conti_radar" />
+	<arg name="config_file" default="default" />
+	<arg name="which" default="cs55" />
+
+	<node name="$(arg node_name)" pkg="conti_radar" type="conti_radar_node" output="screen">
+		<rosparam command="load" file="$(find conti_radar)/config/$(arg config_file).yaml" />
+		<rosparam command="load" file="$(find conti_radar)/config/$(arg which).yaml" />
+	</node>
+</launch>

@@ -1,0 +1,26 @@
+#longitude offset to vehicle center(center of rear axle)
+long_offset_mid: 3.6 #unit: m
+
+#lateral offset to vehicle center(center of rear axle)
+lat_offset_mid: 0.23 #unit: m
+
+#angle offset to vehicle center(center of rear axle)
+angular_deviation_mid: 0.0 #degree
+
+#longitude offset to vehicle center(center of rear axle)
+long_offset_left: 0.0 #unit: m
+
+#lateral offset to vehicle center(center of rear axle)
+lat_offset_left: 0.0 #unit: m
+
+#longtitude offset to vehicle center(center of rear axle)
+angular_deviation_left: 0.0 #degree
+
+#longitude offset to vehicle center(center of rear axle)
+long_offset_right: 3.3 #unit: m
+
+#lateral offset to vehicle center(center of rear axle)
+lat_offset_right: 2.5 #unit: m
+
+#longtitude offset to vehicle center(center of rear axle)
+angular_deviation_right: 0.0 #degree
