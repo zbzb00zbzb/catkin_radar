@@ -1,5 +1,5 @@
 //
-// Created by zxkj on 18-8-5.
+// Created by zxkj on 18-12-01.
 //
 
 #ifndef CONTI_RADAR_OBJECT_EXTENDED_INFO_60D_H
